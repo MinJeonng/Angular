@@ -1,4 +1,16 @@
+<!-- {{}} : template과 components 간의 데이터 바인딩 하는 기법 -->
+<!-- {{ test }} 이 들어가게 됩니다. -->
+
+<div>
+  <div class="time-text">
+    <span> {{ minText }} : {{ secText }} </span>
+    <small> .{{ msText }} </small>
+  </div>
+</div>
+
 <p>
-  <!-- {{}} : template과 components 간의 데이터 바인딩 하는 기법 -->
-  {{ test }} 이 들어가게 됩니다.
+  <!-- 단방향 ->  템플릿에서 데이터가 바운딩된건 함수가 진행(component.ts에 있는)-->
+  <button class="start-btn" (click)="timeStart()">시작</button>
+  <button class="stop-btn" (click)="timeStop()">멈춤</button>
+  <button class="reset-btn" (click)="timeReset()">리셋</button>
 </p>

@@ -7,9 +7,11 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./section.component.scss"],
 })
 export class SectionComponent implements OnInit {
+  present = "welcome";
+
   constructor() {}
-  startTime() {
-    console.log("섹션 컴포넌트 good");
+  startTime($event) {
+    this.present = $event;
   }
 
   ngOnInit() {}
