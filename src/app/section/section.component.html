@@ -1,11 +1,1 @@
-<div class="title">
-  섹션 여기에 자식 컴포넌트
-  <div class="display">
-    <app-time-display> </app-time-display>
-    <!-- emit 함수를 호출하게 되면  clickevent 실행
-    -->
-    <app-buttons (clickEvent)="startTime($event)"> </app-buttons>
-    {{ commandText }}
-    <app-buttons (clickEvent)="commandText = $event"></app-buttons>
-  </div>
-</div>
+<app-stopwatch></app-stopwatch>
